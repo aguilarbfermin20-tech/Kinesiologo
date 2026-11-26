@@ -5,18 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Eje Kinesiología · Kinesiólogo en Palermo</title>
 <meta name="description" content="Kinesiología uno a uno en Palermo: dolor de espalda, cuello y lesiones deportivas. Marcá dónde te duele y pedí tu turno online.">
-<meta name="theme-color" content="#fbfaff">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M6 24a12 12 0 0 1 20 0' fill='none' stroke='%235b3df5' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='12' r='4' fill='%2317133a'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#d4efe7">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M6 24a12 12 0 0 1 20 0' fill='none' stroke='%232c665c' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='12' r='4' fill='%230f2f2a'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=Montserrat:wght@400..700&display=swap" rel="stylesheet">
 <!--
   EJE · rediseño "Rango de movimiento"
   Metáfora: el arco que describe una articulación al moverse. Arcos, círculos y curvas en todo el sitio;
   la página es luminosa y redonda, el opuesto de la noche y las mayúsculas condensadas de Brasa.
   Interacción protagonista: el mapa del cuerpo, que devuelve un arco de sesiones y arma el turno.
   Esencia compartida con Brasa: una idea concreta, un solo acento reservado a la acción, datos en vez de promesas,
-  una interacción que cuenta el servicio y una tipografía que ordena. Acá la letra es clínica y limpia (Plus Jakarta Sans, sin mono ni display expresiva).
+  una interacción que cuenta el servicio y una tipografía que ordena.
+  Estética: paleta menta, títulos en Archivo extendida en mayúsculas, texto en Montserrat y tarjetas de cristal sobre degradés.
 -->
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -25,26 +26,27 @@
 
 <header class="nav">
   <div class="wrap">
-    <div class="bar">
-      <a class="logo" href="#top" aria-label="Eje Kinesiología, inicio"><b>Eje</b><span>Kinesiología</span></a>
+    <div class="bar glass">
+      <a class="logo" href="#top" aria-label="Eje Kinesiología, inicio"><b>EJE</b><span>Kinesio-<br>logía</span></a>
       <nav aria-label="Secciones"><ul>
         <li><a href="#donde">¿Dónde te duele?</a></li>
         <li><a href="#tratamientos">Tratamientos</a></li>
         <li><a href="#quien">Quién atiende</a></li>
       </ul></nav>
-      <a class="btn btn-v" href="#turnos">Pedir turno</a>
+      <a class="btn btn-v" href="#turnos">Pedir turno <span class="arr" aria-hidden="true">→</span></a>
     </div>
   </div>
 </header>
 
 <main id="contenido">
+<div class="hero-bg">
 <section class="hero" id="top" aria-labelledby="h1">
   <div class="wrap hero-grid">
     <div>
-      <p class="kicker"><i aria-hidden="true">●</i>Consultorio en Palermo · Lic. Tomás Rivero</p>
-      <h1 id="h1">Volvé a<br>
+      <p class="kicker glass"><i aria-hidden="true">●</i>Consultorio en Palermo · Lic. Tomás Rivero</p>
+      <h1 id="h1"><span class="l1">Volvé a</span><br>
         <span class="rot" id="rot" aria-live="off"><span class="is-on">correr</span><span aria-hidden="true">agacharte</span><span aria-hidden="true">dormir bien</span><span aria-hidden="true">entrenar</span></span><br>
-        sin dolor.</h1>
+        <span class="l3">sin dolor.</span></h1>
       <p class="bajada">Kinesiología uno a uno: sesiones de 45 minutos, siempre con el mismo profesional, y un plan de ejercicios para tu casa.</p>
       <div class="hero-actions">
         <a class="btn btn-v" href="#donde">Marcá dónde te duele <span class="arr" aria-hidden="true">↓</span></a>
@@ -63,15 +65,17 @@
         <path class="sweep" d="M 57 283 A 160 160 0 0 1 283 57" pathLength="1000" style="stroke-dasharray:1000;"/>
         <circle class="knob" r="10" cx="283" cy="57"/>
       </svg>
-      <div class="float f-rutina" data-depth="10"><span class="label">tu rutina en casa</span><strong>15 minutos</strong></div>
-      <div class="float f-turno" data-depth="18"><span class="label">próximo turno libre</span><strong id="prox-turno">Miércoles 18 · 9:00</strong><span class="libre">6 turnos esta semana</span></div>
-      <div class="float f-resenas" data-depth="6"><span class="star" aria-hidden="true">★</span><span><strong>4,9</strong>212 reseñas en Google</span></div>
+      <div class="float glass f-rutina" data-depth="10"><span class="label">tu rutina en casa</span><strong>15 minutos</strong></div>
+      <div class="float glass f-turno" data-depth="18"><span class="label">próximo turno libre</span><strong id="prox-turno">Miércoles 18 · 9:00</strong><span class="libre">6 turnos esta semana</span></div>
+      <div class="float glass f-resenas" data-depth="6"><span class="star" aria-hidden="true"><span>★</span></span><span><strong>4,9</strong>212 reseñas en Google</span></div>
     </div>
   </div>
 </section>
+</div>
 
-<section class="s" id="donde" aria-labelledby="donde-t" style="padding-top:clamp(40px,6vw,72px)">
+<section class="s" id="donde" aria-labelledby="donde-t" style="padding-top:clamp(24px,4vw,48px)">
   <div class="wrap">
+    <p class="eyebrow reveal">Mapa del cuerpo</p>
     <h2 class="s-title reveal" id="donde-t">¿Dónde te <em>duele?</em></h2>
     <p class="s-lede reveal">Tocá la zona y te contamos qué suele pasar, cuántas sesiones lleva y te armamos el turno.</p>
     <div class="mapa-card reveal">
@@ -88,7 +92,7 @@
           <path class="axis" d="M100 6 V 396"/>
         </svg>
       </div>
-      <div class="panel" aria-live="polite">
+      <div class="panel glass" aria-live="polite">
         <div class="panel-body" id="panel-body">
           <span class="label" id="z-kicker">zona lumbar</span>
           <h3 id="z-title"></h3>
@@ -111,7 +115,8 @@
 <section class="s" id="tratamientos" aria-labelledby="trat-t" style="padding-top:0">
   <div class="wrap">
     <div class="trat-head">
-      <h2 class="s-title reveal" id="trat-t">Qué <em>tratamos</em></h2>
+      <div><p class="eyebrow reveal">Tratamientos</p>
+      <h2 class="s-title reveal" id="trat-t">Qué <em>tratamos</em></h2></div>
       <p class="s-lede reveal" style="margin:0">La primera sesión es una evaluación: vemos cómo te movés, qué te duele y armamos el plan.</p>
     </div>
     <ul class="acc" id="acc"></ul>
@@ -120,7 +125,7 @@
         <h3 id="pf-t">Entre sesiones, seguí tu rutina en PF</h3>
         <p>Te cargamos los ejercicios en PF, la bitácora de entrenamiento. Registrás series y cargas desde el celular y en la próxima sesión vemos cómo te fue.</p>
       </div>
-      <a class="btn" href="https://tupf.vercel.app/" target="_blank" rel="noopener">Conocer PF <span aria-hidden="true">↗</span></a>
+      <a class="btn btn-w" href="https://tupf.vercel.app/" target="_blank" rel="noopener">Conocer PF <span aria-hidden="true">↗</span></a>
     </aside>
   </div>
 </section>
@@ -129,11 +134,11 @@
   <div class="wrap pro-grid">
     <div class="pro-pic reveal">
       <div class="ph"><img src="img/tomas.jpg" width="900" height="1125" loading="lazy" alt="Retrato del licenciado Tomás Rivero"></div>
-      <span class="mat">M.N. 00000 · UBA</span>
+      <span class="mat glass">M.N. 00000 · UBA</span>
     </div>
-    <div class="reveal">
-      <span class="label">quién atiende</span>
-      <h2 class="s-title" id="quien-t" style="margin-top:12px">Lic. Tomás <em>Rivero</em></h2>
+    <div class="pro-card reveal">
+      <p class="eyebrow">Quién atiende</p>
+      <h2 class="s-title" id="quien-t">Lic. Tomás <em>Rivero</em></h2>
       <p class="p1">Kinesiólogo y fisiatra por la UBA, especializado en columna y deporte. Trabajó 8 años en rehabilitación en un club de primera división antes de abrir Eje.</p>
       <p class="p2">Atiende a cada paciente de principio a fin. No vas a contar tu historia dos veces.</p>
       <ul class="chips"><li>Terapia manual</li><li>RPG</li><li>Ejercicio terapéutico</li><li>Punción seca</li></ul>
@@ -143,23 +148,27 @@
 
 <section class="s" id="coberturas" aria-labelledby="cob-t">
   <div class="wrap">
+    <p class="eyebrow reveal">Coberturas</p>
     <h2 class="s-title reveal" id="cob-t">¿Con qué <em>cobertura</em> venís?</h2>
     <p class="s-lede reveal">Elegí la tuya y te decimos qué necesitás traer.</p>
     <ul class="cob" id="cob" aria-label="Coberturas"></ul>
     <p class="cob-msg" id="cob-msg" aria-live="polite">Tocá tu obra social o prepaga.</p>
+    <div class="testi-zone">
     <ul class="testi">
-      <li class="reveal"><blockquote><p>“Llegué sin poder atarme las zapatillas. A la quinta sesión volví a correr.”</p></blockquote><span class="label">Carolina, 38 · lumbalgia</span></li>
-      <li class="reveal"><blockquote><p>“La rutina para la casa me cambió todo. Quince minutos y no me volvió el dolor.”</p></blockquote><span class="label">Martín, 45 · cervicalgia</span></li>
-      <li class="reveal"><blockquote><p>“Tomás habló directo con mi traumatólogo. Todo coordinado.”</p></blockquote><span class="label">Julieta, 27 · rodilla</span></li>
+      <li class="glass reveal"><blockquote><p>“Llegué sin poder atarme las zapatillas. A la quinta sesión volví a correr.”</p></blockquote><span class="label">Carolina, 38 · lumbalgia</span></li>
+      <li class="glass reveal"><blockquote><p>“La rutina para la casa me cambió todo. Quince minutos y no me volvió el dolor.”</p></blockquote><span class="label">Martín, 45 · cervicalgia</span></li>
+      <li class="glass reveal"><blockquote><p>“Tomás habló directo con mi traumatólogo. Todo coordinado.”</p></blockquote><span class="label">Julieta, 27 · rodilla</span></li>
     </ul>
+    </div>
   </div>
 </section>
 
 <section class="s turnos" id="turnos" aria-labelledby="tur-t">
   <div class="wrap">
+    <p class="eyebrow">Turnos online</p>
     <h2 class="s-title" id="tur-t">Pedí tu <em>turno</em></h2>
     <p class="s-lede">Elegí día y horario. Te confirmamos por WhatsApp dentro de las 2 horas hábiles.</p>
-    <div class="book">
+    <div class="book glass">
       <ol class="steps" id="steps" aria-label="Pasos"><li class="cur">Día</li><li>Horario</li><li>Tus datos</li></ol>
       <div class="book-grid">
         <div>
@@ -167,7 +176,7 @@
           <div class="days" id="days" role="group" aria-labelledby="days-t"></div>
           <h3><span id="slots-t">Horario</span><span class="label">sesión de 45 min</span></h3>
           <div class="slots" id="slots" role="group" aria-labelledby="slots-t"></div>
-          <p class="legend"><span>Tachado = ocupado</span><span>Violeta = el tuyo</span></p>
+          <p class="legend"><span>Tachado = ocupado</span><span>Verde = el tuyo</span></p>
         </div>
         <div id="form-col">
           <h3>Tus datos</h3>
@@ -190,12 +199,22 @@
 
 <footer>
   <div class="wrap">
-    <p class="big" aria-hidden="true">Eje</p>
-    <div>
-      <p><strong style="color:var(--ink)">Eje Kinesiología · Gorriti 4800, Palermo, CABA</strong></p>
+    <div class="f-top">
+      <a class="logo" href="#top" aria-label="Eje Kinesiología, volver arriba"><b>EJE</b><span>Kinesio-<br>logía</span></a>
+      <ul class="f-nav" aria-label="Secciones">
+        <li><a href="#donde">¿Dónde te duele?</a></li>
+        <li><a href="#tratamientos">Tratamientos</a></li>
+        <li><a href="#quien">Quién atiende</a></li>
+        <li><a href="#coberturas">Coberturas</a></li>
+      </ul>
+      <a class="btn btn-w" href="#turnos">Pedir turno <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+    <div class="f-info">
+      <p><strong>Eje Kinesiología · Gorriti 4800, Palermo, CABA</strong></p>
       <p>Lunes a viernes de 8 a 19:30 · Sesiones de 45 minutos</p>
       <p>Proyecto de portfolio. Consultorio y datos ficticios. Fotos: Unsplash.</p>
     </div>
+    <p class="f-bottom">© 2026 Eje Kinesiología</p>
   </div>
 </footer>
 

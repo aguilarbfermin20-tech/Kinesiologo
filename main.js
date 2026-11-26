@@ -102,7 +102,7 @@
     li.className = "reveal" + (i === 0 ? " is-open" : "");
     li.innerHTML = `<h3 style="margin:0"><button type="button" class="acc-btn" aria-expanded="${i === 0}" aria-controls="acc-${i}" id="accb-${i}">
         <span class="n">${t.n}</span><span class="t">${t.titulo}</span>
-        <span class="ic" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></button></h3>
+        <span class="ic" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8h12M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button></h3>
       <div class="acc-panel" id="acc-${i}" role="region" aria-labelledby="accb-${i}"><div class="acc-in"><div class="acc-content">
         <div><p>${t.texto}</p><span class="pill"><span class="label">suele llevar</span>${t.sesiones}</span></div>
         <div class="ph"><img src="img/${t.foto}" alt="${t.alt}" width="800" height="600" loading="lazy"></div>
@@ -206,7 +206,7 @@
     setTimeout(() => {
       const d = dias[state.dia];
       document.querySelectorAll("#steps li").forEach(li => li.className = "done");
-      $("#form-col").innerHTML = `<div class="ok-card" role="status" tabindex="-1"><span class="label" style="color:#bdb5ff">turno pedido</span>
+      $("#form-col").innerHTML = `<div class="ok-card" role="status" tabindex="-1"><span class="label">turno pedido</span>
         <h4>Listo, ${nombre.value.trim().split(/\s+/)[0]}.</h4>
         <p>${d.wdl.charAt(0).toUpperCase() + d.wdl.slice(1)} ${d.num} de ${d.mes}, ${TURNOS[state.hora]} hs, con el Lic. Tomás Rivero. Te confirmamos por WhatsApp dentro de las 2 horas hábiles.</p>
         <p style="font-size:14px">Es una demo: el pedido no se envió a ningún lado.</p>
