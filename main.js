@@ -8,10 +8,10 @@
     {id:"tobillo",nombre:"Tobillo",titulo:"Esguinces y <em>tendón de Aquiles</em>",texto:"Un esguince mal curado vuelve a pasar. Trabajamos la estabilidad y el equilibrio para que vuelvas a correr o a jugar con confianza.",sintomas:["Esguince","Inestabilidad","Fascitis plantar"],sesiones:5,motivo:"Me doblé el tobillo",x:60,y:92}
   ];
   const TRAT = [
-    {n:"01",titulo:"Lumbar y cervical",texto:"Contracturas, hernias de disco, ciática y dolor por trabajar sentado muchas horas. Terapia manual, ejercicio y postura.",sesiones:"6 a 10 sesiones",foto:"lumbar.jpg",alt:"Masaje terapéutico en la espalda"},
-    {n:"02",titulo:"Lesiones deportivas",texto:"Esguinces, desgarros, tendinitis y vuelta al entrenamiento con cargas controladas.",sesiones:"4 a 12 sesiones",foto:"deporte.jpg",alt:"Grupo de personas corriendo en la calle"},
-    {n:"03",titulo:"Rehabilitación posquirúrgica",texto:"Rodilla, hombro y columna, coordinado con tu traumatólogo desde el primer día.",sesiones:"Según indicación médica",foto:"manos.jpg",alt:"Manos del kinesiólogo acompañando a un paciente"},
-    {n:"04",titulo:"Postura y prevención",texto:"Evaluación postural y una rutina de fortalecimiento para que el dolor no vuelva.",sesiones:"3 a 5 sesiones",foto:"postura.jpg",alt:"Mujer haciendo ejercicios en una colchoneta"}
+    {n:"01",titulo:"Lumbar y cervical",texto:"Contracturas, hernias de disco, ciática y dolor por trabajar sentado muchas horas. Terapia manual, ejercicio y postura.",sesiones:"6 a 10 sesiones",foto:"lumbar.jpg",alt:"Kinesiólogo trabajando el hombro y la espalda de un paciente en la camilla",w:1000,h:667},
+    {n:"02",titulo:"Lesiones deportivas",texto:"Esguinces, desgarros, tendinitis y vuelta al entrenamiento con cargas controladas.",sesiones:"4 a 12 sesiones",foto:"deporte.jpg",alt:"Mujer entrenando con una banda elástica al aire libre",w:1000,h:667},
+    {n:"03",titulo:"Rehabilitación posquirúrgica",texto:"Rodilla, hombro y columna, coordinado con tu traumatólogo desde el primer día.",sesiones:"Según indicación médica",foto:"rehab.jpg",alt:"Mujer haciendo ejercicios de fortalecimiento con una banda en las piernas",w:1000,h:1500},
+    {n:"04",titulo:"Postura y prevención",texto:"Evaluación postural y una rutina de fortalecimiento para que el dolor no vuelva.",sesiones:"3 a 5 sesiones",foto:"postura.jpg",alt:"Mujer haciendo una estocada con banda elástica en una sala luminosa",w:1000,h:667}
   ];
   const COB = {mensajeGenerico:"Traé la orden médica con diagnóstico y cantidad de sesiones, y la credencial. Nosotros gestionamos la autorización.",opciones:["OSDE","Swiss Medical","Galeno","Medifé","Omint","Sancor Salud","OSECAC","Particular"],particular:"La sesión cuesta $ 28.000 y te damos factura para pedir el reintegro."};
   const TURNOS = ["8:00","9:00","10:00","11:00","15:00","16:00","17:00","18:30"];
@@ -105,7 +105,7 @@
         <span class="ic" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8h12M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button></h3>
       <div class="acc-panel" id="acc-${i}" role="region" aria-labelledby="accb-${i}"><div class="acc-in"><div class="acc-content">
         <div><p>${t.texto}</p><span class="pill"><span class="label">suele llevar</span>${t.sesiones}</span></div>
-        <div class="ph"><img src="img/${t.foto}" alt="${t.alt}" width="800" height="600" loading="lazy"></div>
+        <div class="ph"><img src="img/${t.foto}" alt="${t.alt}" width="${t.w}" height="${t.h}" loading="lazy"></div>
       </div></div></div>`;
     acc.appendChild(li);
     rio.observe(li);

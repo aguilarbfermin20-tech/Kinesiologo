@@ -349,3 +349,112 @@ footer .logo span { color: #a9dccd; }
 .reveal.in { opacity: 1; transform: none; }
 .no-js .reveal { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } }
+
+/* ======================================================================
+   CELULAR: ajustes de lectura, ritmo y tamaño táctil (≤ 600px)
+   ====================================================================== */
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  section.s { padding: 64px 0; }
+  .s-title { font-size: clamp(26px, 8.2vw, 34px); }
+  .s-lede { font-size: 16px; margin-top: 14px; }
+  .eyebrow { font-size: 11.5px; margin-bottom: 12px; }
+
+  /* nav */
+  .nav { padding: 10px 0; }
+  .nav .bar { padding: 6px 6px 6px 18px; }
+  .nav .btn { min-height: 44px; padding: 0 16px; font-size: 14.5px; }
+  .logo b { font-size: 18px; }
+
+  /* hero: título grande, foto protagonista, acciones a todo el ancho */
+  .hero-bg { margin-top: -80px; padding-top: 80px; }
+  .hero { padding: 20px 0 96px; }
+  .hero-grid { gap: 8px; }
+  .kicker { font-size: 13px; padding-right: 14px; }
+  .k-extra { display: none; }
+  .hero h1 { margin-top: 20px; font-size: clamp(32px, 10.4vw, 46px); line-height: 1.02; }
+  .hero h1 .l1 { padding-left: 1.2em; }
+  .hero .bajada { margin-top: 18px; font-size: 16px; }
+  .hero-actions { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 24px; }
+  .hero-actions .btn { width: 100%; min-height: 54px; }
+  .stats { display: grid; grid-template-columns: repeat(3, auto); justify-content: space-between; gap: 8px; margin-top: 30px; padding: 16px 18px; border-radius: var(--r-md); background: rgba(255, 255, 255, .55); border: var(--glass-border); }
+  .stats b { font-size: 24px; }
+  .stats span { display: block; font-size: 11.5px; line-height: 1.3; margin-top: 4px; }
+
+  .orbit { width: 100%; max-width: 360px; margin: 28px auto 8px; }
+  .f-rutina { display: none; }
+  .float { padding: 10px 14px; border-radius: 16px; }
+  .float .label { font-size: 10px; margin-bottom: 3px; }
+  .float strong { font-size: 14.5px; }
+  .f-turno { left: -2%; bottom: 4%; }
+  .f-turno .libre { font-size: 12px; }
+  .f-resenas { right: -2%; bottom: -6%; gap: 8px; }
+  .f-resenas .star { width: 36px; height: 36px; border-width: 2.5px; font-size: 14px; }
+  .f-resenas strong { font-size: 16px; }
+
+  /* mapa del cuerpo: figura más chica, panel a todo el ancho */
+  .mapa-card { padding: 16px 10px 10px; gap: 12px; border-radius: 26px; margin-top: 28px; }
+  .body-wrap { max-width: 172px; }
+  .zona { width: 44px; height: 44px; }
+  .zona .ring { width: 26px; height: 26px; }
+  .panel { padding: 20px 18px; border-radius: 20px; }
+  .panel h3 { font-size: 19px; }
+  .panel .txt { font-size: 15px; }
+  .chips li { font-size: 13px; padding: 7px 12px; }
+  .gauge-row { grid-template-columns: 132px 1fr; justify-items: start; text-align: left; gap: 14px; }
+  .gauge { width: 132px; }
+  .gauge .g-num b { font-size: 24px; }
+  .gauge-row p { font-size: 13.5px; }
+  .panel .btn { width: 100%; }
+
+  /* tratamientos */
+  .acc { margin-top: 28px; gap: 10px; }
+  .acc-btn { gap: 14px; padding: 14px 16px; min-height: 72px; }
+  .acc-btn .n { width: 40px; height: 40px; font-size: 11.5px; }
+  .acc-btn .t { font-size: 16.5px; }
+  .acc-btn .ic { width: 38px; height: 38px; }
+  .acc-content { padding: 0 16px 16px; gap: 16px; }
+  .acc-content p { font-size: 15px; }
+  .acc-content .ph { order: -1; aspect-ratio: 16 / 11; }
+  .pf { margin-top: 24px; padding: 26px 22px; }
+  .pf .btn { width: 100%; }
+
+  /* quién atiende: la tarjeta sube sobre la foto */
+  .pro-pic { max-width: none; }
+  .pro-pic .ph { aspect-ratio: 1 / 1.05; }
+  .pro-pic .ph img { object-position: 50% 25%; }
+  .pro-pic .mat { top: 16px; bottom: auto; left: 16px; }
+  .pro-grid { gap: 0; }
+  .pro-card { margin: -64px 12px 0; position: relative; padding: 24px 20px; }
+  .pro .p1 { font-size: 15.5px; margin-top: 16px; }
+  .pro .p2 { font-size: 17px; }
+
+  /* coberturas: chips más compactos; testimonios en carrusel horizontal */
+  .cob { gap: 8px; margin-top: 24px; }
+  .cob button { min-height: 44px; padding: 0 16px; font-size: 14.5px; }
+  .cob-msg { font-size: 15px; padding: 16px 18px; }
+  .testi-zone { margin: 44px calc(var(--gutter) * -1) 0; padding: 18px 0; border-radius: 0; }
+  .testi { display: grid; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 82%; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px var(--gutter) 8px; scroll-padding-inline: var(--gutter); scrollbar-width: none; }
+  .testi::-webkit-scrollbar { display: none; }
+  .testi li { scroll-snap-align: start; padding: 22px 20px; }
+  .testi blockquote { font-size: 16px; }
+
+  /* turnero */
+  .book { padding: 18px 14px; border-radius: 26px; margin-top: 28px; }
+  .steps { gap: 6px; margin-bottom: 22px; }
+  .steps li { font-size: 12.5px; gap: 6px; white-space: nowrap; }
+  .steps li::before { width: 28px; height: 28px; font-size: 12px; }
+  .book h3 { font-size: 16px; }
+  .day { min-height: 68px; }
+  .days { gap: 6px; margin-bottom: 24px; }
+  .slots { gap: 6px; }
+  .field input, .field select, .field textarea { font-size: 16px; }   /* 16px evita el zoom automático en iOS */
+  form .btn { width: 100%; }
+
+  /* footer */
+  .f-top { flex-direction: column; align-items: flex-start; gap: 18px; }
+  .f-nav { gap: 0 22px; }
+  .f-top .btn { width: 100%; }
+  .f-info { margin-top: 26px; }
+  footer { background: radial-gradient(120% 50% at 100% 100%, #3f9c7f 0, rgba(63, 156, 127, 0) 70%), linear-gradient(180deg, var(--deep-2) 0, var(--deep-1) 100%); }
+}
